@@ -19,23 +19,45 @@
   <div class="d-flex flex-row justify-content-center align-items-center">
     
       <div class="weather__card">
-        <div class="dropdown show">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Select City
-            </a>
+        <h1 class="text-center">Weather Update</h1>
+        <div>
           
-            <div  class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item "  href="#">1</a>
-              <a class="dropdown-item " href="#">2</a>
-              <a class="dropdown-item " href="#">3</a>
-            </div>
+         
+           
+              <label for="locations_dropdown">Choose City:</label>
+              <select name="locations" id="locations_dropdown" class="form-control">
+                <option value="0">Karachi</option>
+                <option value="1">Hunza Valley</option>
+                <option value="2">Skardu</option>
+                <option value="3">Fairy Meadows</option>
+                <option value="4">Naltar Valley</option>
+                <option value="5">Murree</option>
+                <option value="6">Kaghan Valley</option>
+                <option value="7">Swat Valley</option>
+                <option value="8">Chitral</option>
+                <option value="9">Neelum Valley</option>
+                <option value="10">Ratti Gali Lake</option>
+                <option value="11">Shangrila Resort</option>
+                <option value="12">Deosai National Park</option>
+                <option value="13">Khunjerab Pass</option>
+                <option value="14">Shogran</option>
+                <option value="15">Rama Meadows</option>
+                <option value="16">Gojal Valley</option>
+                <option value="17">Kalash Valley</option>
+                <option value="18">Ayubia National Park</option>
+                <option value="19">Saiful Muluk Lake</option>
+                <option value="20">Khaplu</option>
+                
+            </select>
+              
+            
           </div>
           <div class="d-flex flex-row justify-content-center align-items-center">
             
               <div class="p-3">
                 
                   <h2 id="temperature">15 </h2>
-                  <h4 id="max" class="p-2"><i class="fa fa-minus-circle" aria-hidden="true"></i></h4>
+                  <h4 id="max" class="p-2"><i class="fa fa-minus-circle" aria-hidden="true"></i> </h4>
                   <h4 id="min" class="p-2"></h4>
                   
               </div>
@@ -48,7 +70,8 @@
                 
                   <h5 id="date_C">Tuesday, 10 AM</h5>
                   <h3 id="cityName">San Francisco</h3>
-                  <span class="weather__description">Mostly Cloudy</span>
+                  <span id="main" class="weather__description">Mostly Cloudy</span>
+                  <span id="description" class="weather__description">Dis</span>
               </div>
           </div>
           <div class="weather__status d-flex flex-row justify-content-center align-items-center mt-3">
@@ -66,9 +89,7 @@
               </div>
               
           </div>
-          <div>
-            <span id="sunrise">Sunrise </span>
-          </div>
+          
       </div>
      
   </div>
